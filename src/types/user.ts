@@ -1,7 +1,7 @@
-type user = {
-  name: string;
+type User = {
+  name: String;
   dailyCheckBools: Array<Boolean>;
   dailyCheckCoins: Array<Number>;
 };
 
-export type { user };
+export default User;
