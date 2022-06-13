@@ -1,7 +1,7 @@
 type User = {
-  name: String;
-  dailyCheckBools: Array<Boolean>;
-  dailyCheckCoins: Array<Number>;
+  name: string;
+  dailyCheckBools: Array<boolean>;
+  dailyCheckCoins: Array<number>;
 };
 
 export default User;
