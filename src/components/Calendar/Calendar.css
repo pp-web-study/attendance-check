@@ -1,0 +1,64 @@
+.calendar {
+  width: 100%;
+  max-width: 550px;
+  margin: 50px auto;
+  padding: 0 20px;
+  position: relative;
+}
+.calendar table {
+  width: 100%;
+}
+.calendar table caption {
+  height: 35px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  line-height: 30px;
+}
+.calendar table caption span {
+  font-size: 30px;
+  font-weight: 700;
+}
+.calendar table td {
+  padding: 14px 0px;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 50px;
+}
+.calendar table td.on {
+  background: no-repeat center url(../Calendar/heart.png);
+  border-radius: 50%;
+  background-size: 40px;
+  color: #ffffff;
+}
+.calendar td:first-child {
+  color: #ff4851;
+}
+.dim {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 40px;
+  left: 0px;
+} /*211025수정*/
+.dim .dim_bg {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  opacity: 0.8;
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 0;
+}
+.dim .peco {
+  width: 100%;
+  height: 100%;
+  /* background: no-repeat center url(../images/attendance/dim_peco_2111.png); */
+  background-size: 340px;
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+}
