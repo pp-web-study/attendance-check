@@ -1,0 +1,33 @@
+.announce {
+  margin: bottom 30px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.announceIcon {
+  width: 68px;
+}
+
+.announceDate {
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.announce p {
+  line-height: 22px;
+  margin: 10px 0;
+  font-size: 14px;
+  color: #000;
+}
+
+.buttonWinner {
+  width: 100%;
+  background-color: rgb(250, 226, 250);
+  color: #ff0bca;
+  font-size: 18px;
+  border-radius: 15px;
+  border: 1px solid #ff17cd;
+  padding: 16px 0;
+  margin: 30px 0;
+}
