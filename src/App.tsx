@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import SpecialAward from './components/SpecialAward/SpecialAward';
 import Calendar from './components/Calendar/Calendar';
+import AttendanceAward from './components/AttendanceAward/AttendanceAward';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <div className="line"></div>
       <Calendar />
       <div className="line"></div>
+      <AttendanceAward />
       <SpecialAward />
     </div>
   );
