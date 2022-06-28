@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
+
 import './Status.css';
 
 type user = {
@@ -34,7 +37,10 @@ function Status() {
     <div className="wrapper">
       <div className="row">
         <div>
-          <i></i> = 0.001PCI
+          <FontAwesomeIcon
+            icon={solid('circle-dollar-to-slot')}
+          ></FontAwesomeIcon>{' '}
+          = 0.001PCI
         </div>
         <div>1PCI = {rate}원</div>
       </div>
@@ -57,8 +63,8 @@ function Status() {
       </div>
       <div className="row">
         <span>
-          <i></i>당첨되신 PCI는 <em>24시간 이내 지급되며,</em> 즉시 사용이
-          가능합니다.
+          <FontAwesomeIcon icon={solid('circle-info')}></FontAwesomeIcon>
+          당첨되신 PCI는 <em>24시간 이내 지급되며,</em> 즉시 사용이 가능합니다.
         </span>
       </div>
     </div>
