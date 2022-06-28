@@ -12,6 +12,192 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+@charset "utf-8";
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  -ms-touch-action: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #ffffff;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-color: #ffffff;
+  font-weight: 400;
+  color: #000000;
+  letter-spacing: -0.25px;
+}
+
+/* reset */
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+textarea,
+p,
+blockquote,
+th,
+td,
+input,
+select,
+textarea,
+button {
+  margin: 0;
+  padding: 0;
+}
+fieldset,
+img {
+  border: 0 none;
+}
+dl,
+ul,
+ol,
+menu,
+li {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+input,
+select,
+textarea,
+button {
+  vertical-align: middle;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  border: 0 none;
+  background-color: transparent;
+  cursor: pointer;
+}
+input[type='text'],
+textarea,
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+input,
+textarea,
+button,
+select {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+body,
+th,
+td,
+input,
+select,
+textarea,
+button {
+  font-size: 14px;
+  font-family: 'Noto Sans KR', 'Open Sans', Helvetica, Arial, sans-serif;
+  -webkit-text-size-adjust: none;
+  letter-spacing: 0;
+}
+.os_mac body,
+.os_mac th,
+.os_mac td,
+.os_mac input,
+.os_mac select,
+.os_mac textarea,
+.os_mac button {
+  font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+img,
+fieldset {
+  border: 0;
+}
+button:focus {
+  outline: none;
+}
+
+/*링크에 대한 설정*/
+a {
+  text-decoration: none;
+}
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+#wrap {
+  width: 100%;
+  min-width: 320px;
+  letter-spacing: -0.5px;
+  overflow: hidden;
+}
+.title,
+.all,
+.share {
+  width: 100%;
+  max-width: 550px;
+  margin: auto;
+  padding: 0 20px;
+}
+.content {
+  width: 100%;
+  max-width: 550px;
+  margin: auto;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
 
 .App-header {
   background-color: #282c34;
