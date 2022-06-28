@@ -1,0 +1,36 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.box {
+  border: thick #32a1ce;
+  width: 80%;
+  border-radius: 30px;
+  box-shadow: 2px 3px 5px 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.title {
+  font-weight: 300;
+}
+
+.content {
+  font-weight: 500;
+  color: #32a1ce;
+}
+
+.vertical {
+  height: 10vh;
+  width: 0.5vw;
+  border-width: 0;
+  color: #000;
+  background-color: #000;
+}
