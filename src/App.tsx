@@ -1,8 +1,7 @@
 import React from 'react';
-
-import Calendar from './components/Calendar/Calendar';
-
 import './App.css';
+import SpecialAward from './components/SpecialAward/SpecialAward';
+import Calendar from './components/Calendar/Calendar';
 
 function App() {
   return (
@@ -10,6 +9,7 @@ function App() {
       <div className="line"></div>
       <Calendar />
       <div className="line"></div>
+      <SpecialAward />
     </div>
   );
 }
