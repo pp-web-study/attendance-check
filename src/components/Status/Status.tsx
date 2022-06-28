@@ -1,15 +1,12 @@
 import React, { useState } from 'react';
+import './Status.css';
 
 type user = {
   dailyCheck: Array<boolean>;
   dailyCoin: Array<number>;
 };
 
-type userProps = {
-  user: user;
-};
-
-function Status(props: userProps) {
+function Status() {
   function arraySum(numbers: Array<number>) {
     const result = numbers.reduce((prev, cur) => {
       return prev + cur;
@@ -28,18 +25,34 @@ function Status(props: userProps) {
   }
 
   const [rate, setRate] = useState(0);
+  const [user, setUser] = useState({
+    dailyCheck: [true, false, true, false],
+    dailyCoin: [1, 2, 3, 4],
+  });
 
   return (
     <div className="wrapper">
       <div className="row">
-        <div className="unit"></div>
-        <div className="rate">{rate}</div>
+        <div>
+          <i></i> = 0.001PCI
+        </div>
+        <div>1PCI = {rate}원</div>
       </div>
       <div className="row">
         <div className="box">
-          <div className="count">{arrayCount(props.user.dailyCheck)}</div>
-          <div className="division"></div>
-          <div className="sum">{arraySum(props.user.dailyCoin)}</div>
+          <div>
+            <span className="title">누적 출석 횟수</span>
+            <br />
+            <span className="content">{arrayCount(user.dailyCheck)}회</span>
+          </div>
+          <div className="division">
+            <hr className="vertical" />
+          </div>
+          <div>
+            <span className="title">누적 획득 PCI</span>
+            <br />
+            <span className="content">{arraySum(user.dailyCoin)}</span>
+          </div>
         </div>
       </div>
       <div className="row">
@@ -51,3 +64,5 @@ function Status(props: userProps) {
     </div>
   );
 }
+
+export default Status;
