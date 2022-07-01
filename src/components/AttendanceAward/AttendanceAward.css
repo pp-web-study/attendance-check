@@ -1,0 +1,49 @@
+.cont01 {
+  width: 100%;
+  text-align: center;
+  padding: 50px 0;
+}
+.cont01 h2 {
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+.cont01 p {
+  line-height: 22px;
+  margin: 10px 0;
+  font-size: 14px;
+  color: #000;
+}
+.cont01 .icon {
+  width: 82px;
+}
+.cont01 .icon {
+  width: 80px;
+}
+.cont01 ul {
+  padding-top: 24px;
+}
+.cont01 ul li {
+  padding: 10px 0;
+}
+.cont01 span {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ff8e99;
+  background-color: rgb(253, 221, 226);
+  border-radius: 100px;
+  padding: 8px 16px;
+}
+.cont02 {
+  padding-top: 0 !important;
+}
+.cont02 p {
+  font-size: 16px !important;
+  color: #777 !important;
+}
+.cont02 img {
+  width: 100%;
+  margin-top: 15px;
+}
