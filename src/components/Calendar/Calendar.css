@@ -25,7 +25,7 @@
   border-radius: 50px;
 }
 .calendar table td.on {
-  background: no-repeat center url(../Calendar/heart.png);
+  background: no-repeat center url(/public/images/heart.png);
   border-radius: 50%;
   background-size: 40px;
   color: #ffffff;
