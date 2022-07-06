@@ -1,0 +1,34 @@
+.background {
+  display: flex;
+  justify-content: space-around;
+  background-color: #e0e0e0;
+}
+
+.box {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.imobox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+
+.spanBox {
+  text-align: left;
+}
+
+.thick {
+  font-size: 16px;
+}
+
+.thin {
+  font-size: 12px;
+}
+
+em {
+  font-weight: bold;
+}
