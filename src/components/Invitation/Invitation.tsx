@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
+import './Invitation.css';
 
 function Invitation() {
   const goInviteEvent = function () {
@@ -6,18 +9,18 @@ function Invitation() {
   };
 
   return (
-    <div onClick={goInviteEvent}>
-      <div>
-        <div>
-          <span>PCI 더 받고 싶다면</span>
+    <div onClick={goInviteEvent} className="background">
+      <div className="box">
+        <div className="spanBox">
+          <span className="thick">PCI 더 받고 싶다면</span>
           <br />
-          <em>친구추천 하고 PCI 받으세요!</em>
+          <em className="thick">친구추천 하고 PCI 받으세요!</em>
           <br />
-          <span>친구 추천하기&gt;</span>
+          <span className="thin">친구 추천하기&gt;</span>
         </div>
       </div>
-      <div>
-        <img src="" alt="" />
+      <div className="imobox">
+        <FontAwesomeIcon icon={solid('handshake')}></FontAwesomeIcon>
       </div>
     </div>
   );
