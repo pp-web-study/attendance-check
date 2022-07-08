@@ -2,8 +2,14 @@ import React, { useState } from 'react';
 import './SpecialAward.css';
 import SpecialAwardPopUp from './SpecialAwardPopUp';
 
-function SpecialAward() {
-  const [open, setOpen] = useState<boolean>(false);
+type openProps = { open: boolean };
+const SpecialAward = (open: openProps) => {
+  const [btnState, setBtnState] = useState(false);
+
+  const handleBtnClick = () => {
+    setBtnState((click: boolean) => !click);
+  };
+
   return (
     <div>
       <div className="announce">
@@ -18,13 +24,13 @@ function SpecialAward() {
           <br />
           *3월 당첨자의 경우 4월 10일 발표
         </p>
-        <button className="buttonWinner" type="button">
+        <button className="buttonWinner" type="button" onClick={handleBtnClick}>
           2월 당첨자 확인
         </button>
       </div>
-      <SpecialAwardPopUp open={open} />
+      {btnState && <SpecialAwardPopUp />}
     </div>
   );
-}
+};
 
 export default SpecialAward;
