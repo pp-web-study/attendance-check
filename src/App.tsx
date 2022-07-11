@@ -3,6 +3,7 @@ import './App.css';
 import SpecialAward from './components/SpecialAward/SpecialAward';
 import Calendar from './components/Calendar/Calendar';
 import AttendanceAward from './components/AttendanceAward/AttendanceAward';
+import CheckWinner from './components/CheckWinner/CheckWinner';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Calendar />
       <div className="line"></div>
       <AttendanceAward />
+      <CheckWinner />
       <SpecialAward />
     </div>
   );
