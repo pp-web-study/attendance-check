@@ -1,0 +1,35 @@
+.cont02 {
+  width: 100%;
+  max-width: 550px;
+  margin: auto;
+  text-align: center;
+  padding: 0 20px;
+}
+.cont02 ul {
+  padding: 50px 0;
+  margin-top: 50px;
+  padding-top: 0 !important;
+}
+.cont02 p {
+  font-size: 16px !important;
+  color: #777 !important;
+}
+.cont02 img {
+  width: 100%;
+  margin-top: 15px;
+}
+.cont02 .icon {
+  width: 80px;
+}
+
+/* Galaxy Fold */
+@media all and (min-width: 580px) and (max-width: 3000px) {
+  .prize01,
+  .prize02,
+  .prize03 {
+    width: 60%;
+    top: 20%;
+    max-width: 350px;
+    margin: 0 auto;
+  } /*220104추가*/
+}
