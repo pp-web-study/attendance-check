@@ -9,15 +9,13 @@ import AttendanceAward from './components/AttendanceAward/AttendanceAward';
 // }
 
 function App() {
-  const [open, setOpen] = useState<boolean>(false);
-
   return (
     <div className="App">
       <div className="line"></div>
       <Calendar />
       <div className="line"></div>
       <AttendanceAward />
-      <SpecialAward open={open} />
+      <SpecialAward />
     </div>
   );
 }
