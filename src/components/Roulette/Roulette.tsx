@@ -13,16 +13,27 @@ function Roulette() {
     { option: '6', style: { backgroundColor: 'purple', textColor: 'black' } },
   ]);
 
+  const [mustSpin, setMustSpin] = useState(false);
+  const [prizeNumber, setPrizeNumber] = useState(0);
+
+  const handleSpinClick = () => {
+    const newPrizeNumber = Math.floor(Math.random() * data.length);
+    setPrizeNumber(newPrizeNumber);
+    setMustSpin(true);
+  };
+
   return (
     <div className="roulette-box">
       <Wheel
-        mustStartSpinning={true}
-        prizeNumber={1}
+        mustStartSpinning={mustSpin}
+        prizeNumber={prizeNumber}
         data={data}
         backgroundColors={['#3e3e3e', '#df3428']}
         textColors={['#ffffff']}
       ></Wheel>
-      <button></button>
+      <button onClick={handleSpinClick} className="roulette-btn">
+        SPIN
+      </button>
     </div>
   );
 }
