@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
+import React, { useCallback, useState } from 'react';
+import Button from '../Button/Button';
 import './SpecialAward.css';
 import SpecialAwardPopUp from './SpecialAwardPopUp';
 
-type openProps = { open: boolean };
-const SpecialAward = (open: openProps) => {
-  const [btnState, setBtnState] = useState(false);
+const SpecialAward = () => {
+  const [isOpenModal, setOpenModal] = useState<boolean>(false);
 
-  const handleBtnClick = () => {
-    setBtnState((click: boolean) => !click);
-  };
+  const onClickModal = useCallback(() => {
+    setOpenModal(!isOpenModal);
+  }, [isOpenModal]);
 
   return (
     <div>
@@ -24,11 +24,9 @@ const SpecialAward = (open: openProps) => {
           <br />
           *3월 당첨자의 경우 4월 10일 발표
         </p>
-        <button className="buttonWinner" type="button" onClick={handleBtnClick}>
-          2월 당첨자 확인
-        </button>
+        <Button name="당첨자 확인" onClick={onClickModal} />
       </div>
-      {btnState && <SpecialAwardPopUp />}
+      {isOpenModal && <SpecialAwardPopUp onClickModal={onClickModal} />}
     </div>
   );
 };

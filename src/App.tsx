@@ -10,8 +10,6 @@ import CheckWinner from './components/CheckWinner/CheckWinner';
 // }
 
 function App() {
-  const [open, setOpen] = useState<boolean>(false);
-
   return (
     <div className="App">
       <div className="line"></div>
@@ -19,7 +17,7 @@ function App() {
       <div className="line"></div>
       <AttendanceAward />
       <CheckWinner />
-      <SpecialAward open={open} />
+      <SpecialAward />
     </div>
   );
 }

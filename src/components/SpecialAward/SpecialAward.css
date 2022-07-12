@@ -23,11 +23,12 @@
 
 .buttonWinner {
   width: 100%;
-  background-color: rgb(250, 226, 250);
-  color: #ff0bca;
+  background-color: rgb(253, 221, 226);
+  color: #ff8e99;
   font-size: 18px;
+  font-weight: bold;
   border-radius: 15px;
-  border: 1px solid #ff17cd;
+  border: 1px solid #ff8e99;
   padding: 16px 0;
   margin: 30px 0;
 }
