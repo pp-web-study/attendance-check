@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import { Wheel } from 'react-custom-roulette';
+
+import Modal from './components/Modal';
 import './Roulette.css';
 
 function Roulette() {
@@ -15,11 +17,18 @@ function Roulette() {
 
   const [mustSpin, setMustSpin] = useState(false);
   const [prizeNumber, setPrizeNumber] = useState(0);
+  const [isOpenModal, setOpenModal] = useState<boolean>(false);
+
+  const onClickToggleModal = useCallback(() => {
+    setOpenModal(!isOpenModal);
+    console.log(!isOpenModal);
+  }, [isOpenModal]);
 
   const handleSpinClick = () => {
     const newPrizeNumber = Math.floor(Math.random() * data.length);
     setPrizeNumber(newPrizeNumber);
     setMustSpin(true);
+    setTimeout(onClickToggleModal, 3000);
   };
 
   return (
@@ -34,6 +43,13 @@ function Roulette() {
       <button onClick={handleSpinClick} className="roulette-btn">
         SPIN
       </button>
+      {isOpenModal && (
+        <Modal
+          onClickModal={onClickToggleModal}
+          prizeNumber={prizeNumber}
+        ></Modal>
+      )}
+      <button onClick={onClickToggleModal}>Open Modal</button>
     </div>
   );
 }
