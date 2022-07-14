@@ -51,21 +51,6 @@
   margin: 10px 10px;
 }
 
-.imog {
-  font-size: 100px;
-}
-
-.tip {
-  font-weight: bold;
-}
-
-.blue-box {
-  background-color: #cff3fc;
-  border-radius: 3px;
-  color: blue;
-  margin: 0 20px;
-}
-
 .close-btn {
   -webkit-appearance: none;
   -moz-appearance: none;
