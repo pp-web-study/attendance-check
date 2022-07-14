@@ -17,18 +17,16 @@ function Roulette() {
 
   const [mustSpin, setMustSpin] = useState(false);
   const [prizeNumber, setPrizeNumber] = useState(0);
-  const [isOpenModal, setOpenModal] = useState<boolean>(false);
+  const [isOpenModal, setOpenModal] = useState(false);
 
   const onClickToggleModal = useCallback(() => {
     setOpenModal(!isOpenModal);
-    console.log(!isOpenModal);
   }, [isOpenModal]);
 
   const handleSpinClick = () => {
     const newPrizeNumber = Math.floor(Math.random() * data.length);
     setPrizeNumber(newPrizeNumber);
     setMustSpin(true);
-    setTimeout(onClickToggleModal, 3000);
   };
 
   return (
@@ -39,6 +37,10 @@ function Roulette() {
         data={data}
         backgroundColors={['#3e3e3e', '#df3428']}
         textColors={['#ffffff']}
+        onStopSpinning={() => {
+          setMustSpin(false);
+          setOpenModal(!isOpenModal);
+        }}
       ></Wheel>
       <button onClick={handleSpinClick} className="roulette-btn">
         SPIN
