@@ -1,0 +1,18 @@
+.blue-box {
+  background-color: #cff3fc;
+  border-radius: 3px;
+  color: blue;
+  margin: 0 20px;
+}
+
+.row {
+  margin: 10px 10px;
+}
+
+.imog {
+  font-size: 100px;
+}
+
+.tip {
+  font-weight: bold;
+}
