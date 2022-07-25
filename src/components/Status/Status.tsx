@@ -49,7 +49,9 @@ function Status() {
           <div>
             <span className="title">누적 출석 횟수</span>
             <br />
-            <span className="content">{arrayCount(user.dailyCheck)}회</span>
+            <span className="content" id="attendanceCount">
+              {arrayCount(user.dailyCheck)}회
+            </span>
           </div>
           <div className="division">
             <hr className="vertical" />
@@ -57,7 +59,9 @@ function Status() {
           <div>
             <span className="title">누적 획득 Coin</span>
             <br />
-            <span className="content">{arraySum(user.dailyCoin)}</span>
+            <span className="content" id="attendanceSum">
+              {arraySum(user.dailyCoin)}
+            </span>
           </div>
         </div>
       </div>
