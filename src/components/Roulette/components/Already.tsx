@@ -16,11 +16,11 @@ function Already() {
       </div>
       <div className="row">
         <div className="blue-box">
-          <em className="tip">PCI 모오는 꿀팁★</em>
+          <em className="tip">Coin 모오는 꿀팁★</em>
           <br />
-          페이코인에서 게임하고
+          newPay에서 게임하고
           <br />
-          PCI 받아가세요!
+          Coin 받아가세요!
         </div>
       </div>
     </>
