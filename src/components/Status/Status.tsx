@@ -40,9 +40,9 @@ function Status() {
           <FontAwesomeIcon
             icon={solid('circle-dollar-to-slot')}
           ></FontAwesomeIcon>{' '}
-          = 0.001PCI
+          = 0.001Coin
         </div>
-        <div>1PCI = {rate}원</div>
+        <div>1Coin = {rate}원</div>
       </div>
       <div className="row">
         <div className="box">
@@ -55,7 +55,7 @@ function Status() {
             <hr className="vertical" />
           </div>
           <div>
-            <span className="title">누적 획득 PCI</span>
+            <span className="title">누적 획득 Coin</span>
             <br />
             <span className="content">{arraySum(user.dailyCoin)}</span>
           </div>
@@ -64,7 +64,7 @@ function Status() {
       <div className="row">
         <span>
           <FontAwesomeIcon icon={solid('circle-info')}></FontAwesomeIcon>
-          당첨되신 PCI는 <em>24시간 이내 지급되며,</em> 즉시 사용이 가능합니다.
+          당첨되신 Coin는 <em>24시간 이내 지급되며,</em> 즉시 사용이 가능합니다.
         </span>
       </div>
     </div>
